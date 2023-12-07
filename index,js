@@ -1,0 +1,35 @@
+class hero{
+	constructor(name, age, job, atak){
+    this.name = name
+    this.age = age
+    this.job = job
+
+    }
+    atacar(){
+    let atak;
+    
+    if (this.job === "Mago"){
+    atak = "Magia";}
+    	else if (this.job === "Gerreiro"){
+        atak = "Espada";}
+        else if (this.job === "Monge"){
+        atak = "Artes Marciais";}
+        else if (this.job === "Ninja"){
+        atak = "Shuriken";}
+        else {atak = "Um ataque tão desconhecido quanto sua identidade"}
+    
+    console.log(`O ${this.job} atacou usando ${atak}`)
+  
+    }
+}
+
+let wizard = new hero("Merlim", "200", "Mago", "Magia")
+let warrior = new hero("Bedevere", "30", "Gerreiro", "Espada")
+let monk = new hero ("Bruce Lee", "32", "Monge", "Artes Marciais")
+let ninja = new hero ("Donatelo", "17", "Ninja", "Shuriken")
+
+
+wizard.atacar()
+warrior.atacar()
+monk.atacar()
+ninja.atacar()
